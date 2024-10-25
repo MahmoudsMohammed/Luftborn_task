@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --main-color: #0e1323;
+  --sec-color: #1c204b;
+  --text-color: #fff;
+  --sec-text-color: #bbc0ff;
+  // 18 - 16
+  --base-font: clamp(1rem, 0.9565rem + 0.2174vw, 1.125rem);
+  // 40 - 24
+  --x-large: clamp(1.5rem, 1.1522rem + 1.7391vw, 2.5rem);
+  // 16 - 14
+  --small: clamp(0.875rem, 0.8315rem + 0.2174vw, 1rem);
+  // 14 - 12
+  --x-small: clamp(0.75rem, 0.7065rem + 0.2174vw, 0.875rem);
+  --radius: 1rem;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: var(--base-font);
+  color: var(--text-color);
+  background-color: var(--main-color);
+}

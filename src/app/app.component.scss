@@ -1,0 +1,14 @@
+.warpper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(255px, 1rem));
+  width: 90%;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
