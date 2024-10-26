@@ -56,14 +56,14 @@ header {
     display: flex;
     align-items: center;
   }
-  a + img {
+  .toggle {
     width: calc(35rem / 16);
     height: calc(35rem / 16);
     cursor: pointer;
     display: none;
   }
   @media (max-width: 767px) {
-    img {
+    .toggle {
       display: block;
     }
     nav {
