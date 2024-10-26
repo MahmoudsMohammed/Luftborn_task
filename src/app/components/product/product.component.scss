@@ -1,5 +1,5 @@
 .product {
-  height: 150px;
+  height: 180px;
   position: relative;
   background-color: var(--sec-color);
   padding: calc(20rem / 16);
@@ -49,10 +49,10 @@
         justify-content: space-between;
         align-items: center;
         gap: calc(20rem / 16);
-        margin-top: calc(40rem / 16);
+        margin-top: calc(30rem / 16);
       }
       & > p:first-of-type {
-        margin-top: 0;
+        margin: 0;
       }
       p {
         flex: 1;

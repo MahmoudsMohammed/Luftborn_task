@@ -1,4 +1,20 @@
-<div class="warpper">
+@if(!loading){
+<header>
+  <a>
+    <img src="/custom_icon.svg" alt="" />
+    <span>Flash Store</span>
+  </a>
+  <img src="/burger-menu.png" alt="" (click)="onToggle()" />
+  <nav #nav>
+    <ul>
+      <li class="active">Best Seller</li>
+      <li>Admins</li>
+      <li>Users</li>
+      <li>Products</li>
+    </ul>
+  </nav>
+</header>
+<main class="warpper">
   <div>
     <app-best-sales />
     <div class="container">
@@ -7,4 +23,7 @@
       }
     </div>
   </div>
-</div>
+</main>
+}@else {
+<app-loader />
+}
