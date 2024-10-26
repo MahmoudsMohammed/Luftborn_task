@@ -56,7 +56,7 @@ header {
     display: flex;
     align-items: center;
   }
-  img {
+  a + img {
     width: calc(35rem / 16);
     height: calc(35rem / 16);
     cursor: pointer;
