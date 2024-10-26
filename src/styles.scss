@@ -9,8 +9,8 @@
   --x-large: clamp(1.5rem, 1.1522rem + 1.7391vw, 2.5rem);
   // 16 - 14
   --small: clamp(0.875rem, 0.8315rem + 0.2174vw, 1rem);
-  // 14 - 12
-  --x-small: clamp(0.75rem, 0.7065rem + 0.2174vw, 0.875rem);
+  // 12 - 10
+  --x-small: clamp(0.625rem, 0.5815rem + 0.2174vw, 0.75rem);
   --radius: 1rem;
 }
 body {

@@ -1,4 +1,7 @@
 .best-sales {
+  position: relative;
+  top: calc(-45rem / 16);
+  width: calc(255rem / 16);
   background-color: var(--sec-color);
   border-radius: var(--radius);
   -webkit-border-radius: var(--radius);
@@ -6,6 +9,11 @@
   -ms-border-radius: var(--radius);
   -o-border-radius: var(--radius);
   overflow: hidden;
+  @media (max-width: 575px) {
+    & {
+      width: 100%;
+    }
+  }
   .seller {
     padding: calc(20rem / 16);
     background-color: #5747ea;
@@ -45,6 +53,26 @@
       display: flex;
       flex-direction: column;
     }
+    @media (max-width: 575px) {
+      & {
+        display: flex;
+        align-items: center;
+        gap: calc(20rem / 16);
+        padding: calc(50rem / 16) calc(30rem / 16);
+      }
+      & figure > img {
+        width: calc(64rem / 16);
+        height: calc(64rem / 16);
+      }
+      & p {
+        flex-direction: row;
+        gap: calc(5rem / 16);
+        letter-spacing: 1px;
+      }
+      span:not(p > span) {
+        margin: 0;
+      }
+    }
   }
 
   .time {
@@ -53,11 +81,41 @@
     padding: calc(20rem / 16);
     background-color: var(--sec-color);
     color: var(--sec-text-color);
+    @media (max-width: 575px) {
+      & {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
     span {
+      cursor: pointer;
       padding: calc(10rem / 16);
+      &:not(:last-of-type) {
+        margin-bottom: calc(10rem / 16);
+      }
       &.active {
         color: var(--text-color);
       }
+      &:hover {
+        background-color: var(--sec-text-color);
+        color: var(--main-color);
+      }
+      @media (max-width: 575px) {
+        &:not(:last-of-type) {
+          margin-bottom: 0;
+          margin-right: calc(5rem / 16);
+        }
+      }
+      transition: 0.5s;
+      border-radius: calc(5rem / 16);
+      -webkit-border-radius: calc(5rem / 16);
+      -moz-border-radius: calc(5rem / 16);
+      -ms-border-radius: calc(5rem / 16);
+      -o-border-radius: calc(5rem / 16);
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -ms-transition: 0.5s;
+      -o-transition: 0.5s;
     }
   }
 }

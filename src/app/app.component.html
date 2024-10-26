@@ -1,3 +1,10 @@
 <div class="warpper">
-  <app-best-sales />
+  <div>
+    <app-best-sales />
+    <div class="container">
+      @for(product of products$ | async ; track product;let i = $index){
+      <app-product [product]="product" [color]="colors[i]" />
+      }
+    </div>
+  </div>
 </div>
