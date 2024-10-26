@@ -78,7 +78,7 @@
   .time {
     display: flex;
     flex-direction: column;
-    padding: calc(20rem / 16);
+    padding: calc(15rem / 16);
     background-color: var(--sec-color);
     color: var(--sec-text-color);
     @media (max-width: 575px) {
