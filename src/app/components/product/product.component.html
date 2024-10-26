@@ -1,15 +1,17 @@
-<div class="product">
-  <div [ngStyle]="{ background: color }"></div>
-  <p>{{ product.category }}</p>
-  <div class="info">
-    <p>{{ product.price }}$</p>
-    <div>
-      <p>{{ product.title }}</p>
-      <span
-        >InStore <br />
-        {{ product.rating.count }}</span
-      >
+<div class="animate__animated animate__fadeInDown">
+  <div class="product">
+    <div [ngStyle]="{ background: color }"></div>
+    <p>{{ product.category }}</p>
+    <div class="info">
+      <p>{{ product.price }}$</p>
+      <div>
+        <p>{{ product.title }}</p>
+        <span
+          >InStore <br />
+          {{ product.rating.count }}</span
+        >
+      </div>
     </div>
+    <div class="dotes"><span></span><span></span><span></span></div>
   </div>
-  <div class="dotes"><span></span><span></span><span></span></div>
 </div>

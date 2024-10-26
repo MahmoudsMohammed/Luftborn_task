@@ -8,7 +8,6 @@
   -moz-border-radius: var(--radius);
   -ms-border-radius: var(--radius);
   -o-border-radius: var(--radius);
-  position: relative;
   @media (max-width: 575px) {
     & {
       height: calc(122rem / 16);
